@@ -1,5 +1,5 @@
 <template>
-  <div id="editor">
+  <div id="editor" :class="$style.editor">
     <h3 :class="$style.red">Markdown Editor</h3>
     <textarea v-model="input"></textarea>
     <vue-markdown :source="input"></vue-markdown>
@@ -24,5 +24,13 @@ export default {
 <style module>
 .red {
   color: red;
+}
+.editor {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
