@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import wrap from '@vue/web-component-wrapper'
 import MarkdownEditor from './components/MarkdownEditor'
-import { App } from './App'
+import App from './App'
 
 Vue.config.productionTip = false
 

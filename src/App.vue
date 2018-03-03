@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <MarkdownEditor/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import MarkdownEditor from './components/MarkdownEditor'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MarkdownEditor
   }
 }
 </script>
