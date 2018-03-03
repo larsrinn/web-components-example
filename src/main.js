@@ -7,19 +7,8 @@ import App from './App'
 
 Vue.config.productionTip = false
 
-const ClickCountingButton = {
-  template: '<span>Click counting button <button v-on:click="counter += 1">{{ counter }}</button></span>',
-  data: function () {
-    return {
-      counter: 0
-    }
-  }
-}
-
-const ClickCountingButtonElement = wrap(Vue, ClickCountingButton)
 const MarkdownEditorElement = wrap(Vue, MarkdownEditor)
 
-window.customElements.define('click-counting-button', ClickCountingButtonElement)
 window.customElements.define('markdown-editor', MarkdownEditorElement)
 
 /* eslint-disable no-new */
